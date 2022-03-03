@@ -1,0 +1,43 @@
+header,
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+}
+
+.header-falso{
+  width: 100%;
+  height: 50px;
+  background-color: green;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c-blue{
+  background-color: blue;
+  height: 100px;
+  width: 20%;
+  float: left;
+}
+
+main{
+  margin: 30px 0;
+  border: 1px solid black;
+}
+
+.c-pink{
+  background-color: pink;
+  height: 500px;
+  width: calc( 60% - 60px );
+  margin-left: 30px;
+  margin-right: 30px;
+  float: left;
+}
+
+footer{
+  background-color: orange;
+}

@@ -1,0 +1,105 @@
+/* PRIMA RIGA */
+
+/* .q-rosso{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+}
+
+.q-blu{
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+}
+
+.q-verde{
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  position: absolute;
+
+  bottom: 0;
+  left: 100%;
+} */
+
+
+/* SECONDA RIGA */
+
+/* .q-rosso{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+}
+
+.q-blu{
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+}
+
+.q-verde{
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  position: absolute;
+  bottom: 12%;
+  right: 12%;
+  z-index: 2;
+}
+
+.q-2{
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.q-3{
+  position: absolute;
+  bottom:0;
+  right:0;
+} */
+
+/* TERZA RIGA */
+
+.q-verde{
+  width: 300px;
+  height: 200px;
+
+  background-color:green
+}
+
+.q-blu{
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+  display: inline-block;
+  position: relative;
+}
+
+.q-rosso{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.q-2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.q-4{
+  position: relative;
+  left: 10px;
+}
+
+.q-viola{
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

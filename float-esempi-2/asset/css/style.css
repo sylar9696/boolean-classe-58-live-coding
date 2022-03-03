@@ -1,0 +1,133 @@
+/* Intestazione */
+header{
+  background-color: #777777;
+}
+
+.menu-principale li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principale a{
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.active{
+  background-color: #4caf50;
+}
+
+a:hover{
+  background-color: #000;
+}
+
+/* Contenuto centrale */
+main{
+  padding: 20px;
+}
+
+/* Menu aside */
+aside{
+  width: 25%;
+  float: left;
+}
+
+.menu-secondario a{
+  display: block;
+  background-color: #eeeeee;
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-secondario a:hover {
+  background-color: #333;
+  color: white;
+}
+
+ul .active-side{
+  background-color: #008cba;
+  color: white;
+}
+
+.column-img{
+  width: calc(100% / 3 );
+  float: left;
+}
+
+.column-img img{
+   padding: 20px;
+   width: 100%;
+}
+
+.column-img{
+  position: relative;
+}
+
+.overlay{
+  background-color: rgba(255, 5, 5, 0.2);
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+
+
+
+
+/* .menu-secondario li{
+  background-color: #eeeeee;
+  padding:10px;
+  margin: 10px 0;
+}
+
+.menu-secondario li a{
+  text-decoration: none;
+  color: #333;
+}
+
+ul .active-side{
+  background-color: #008cba;
+}
+
+ul .active-side a{
+  color: white;
+} */
+
+
+
+/* Article */
+article{
+  width: calc( 75% - 20px );
+  margin-left: 20px;
+  float: left;
+}
+
+h2{
+  text-align: center;
+  padding: 30px 0;
+  background-color: #2196f3;
+  color: white;
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.8em;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer{
+  background-color: #333;
+  padding: 20px;
+}
+
+footer h3{
+  color: white;
+}

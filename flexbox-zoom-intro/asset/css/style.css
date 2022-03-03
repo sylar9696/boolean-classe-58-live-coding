@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility */
+.bg-red{
+  background-color:  #f04040;
+}
+
+header{
+  background-color: #65cb62;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-left{
+  background-color: #2ae1ee;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+.fa-angle-left{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(180, 180, 180);
+}
+
+.icon-right{
+  margin: 0 20px;
+}
+
+.input-search{
+  background-image: url('./../img/magnifying-glass-solid.svg');
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-size: 5%;
+  background-position: 5px center;
+}
+
+.menu-center{
+  background-color: #7429ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 40%;
+  /* height: 100%; */
+}
+
+.menu-right{
+  background-color: #286b26;
+  display: flex;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.icon-menu{
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+main{
+  background-color: #fb6d6d;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content-center{
+  background-color: #7429ee;
+  flex-basis: 50%;
+  height: 50%;
+  display: flex;
+}
+
+.icon-gear{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.content-left,
+.content-right{
+  background-color: grey;
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.content-left{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.box{
+  height: 50%;
+  background-color: red;
+  flex-basis: 50%;
+}

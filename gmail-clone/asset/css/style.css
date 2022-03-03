@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('./../img/bg2_1920x1200.jpg');
+}
+
+header,
+main,
+footer{
+  width: 80%;
+  margin: 10px auto;
+}
+
+hr{
+  margin-top: 10px;
+}
+
+.intestazione{
+  display: inline;
+  color: white;
+}
+
+#logo{
+  height: 80px;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.not-read{
+  color: white;
+  font-size: 1.7em;
+  margin: 10px 0;
+}
+
+#cerchio{
+  display: inline-block;
+  background-color: orange;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.single-email{
+  background-color: #d3d3d3;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.emails{
+  margin-top: 30px;
+}
+
+.check{
+  content: "\2713";
+  color: red;
+}

@@ -1,0 +1,68 @@
+/* HOVER */
+
+/* .button{
+  background-color: blue;
+  padding: 50px;
+}
+
+.text-button{
+  color: white;
+}
+
+/* .button:hover .text-button{
+  visibility: hidden;
+} */
+
+/* span:hover{
+  background-color: green;
+  font-size: 20px;
+} */
+
+/* .button::after {
+  content: "hellow world";
+  color: white;
+}
+
+.button:hover.button::after {
+  content: "NO";
+  color: white;
+} */
+
+/* FINE HOVER */
+
+.product{
+  display: inline-block;
+  border: 2px solid red;
+  position: relative;
+}
+
+.discount{
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.bg-green{
+  background-color:green;
+}
+
+.heart{
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: red;
+  display: block;
+  display: none;
+}
+
+.product:hover .heart{
+  display: block;
+  cursor: pointer;
+}
+
+
+
+/* .text-center{
+  text-align: center;
+} */

@@ -1,0 +1,48 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+}
+
+
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-blue{
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+div{
+  height: 50px;
+}
+
+/* libreria 12 col */
+/* .row{
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  flex-grow: 1;
+}
+
+.col-lg-1{
+  flex-basis: calc( (100% / 12) * 100 );
+} */
+
+
+
+.bg-blue {
+  background-color: lightblue;
+  border: 1px solid black;
+}

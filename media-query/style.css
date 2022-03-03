@@ -1,0 +1,30 @@
+body{
+  background-color: white;
+}
+
+/* 780-infinito */
+@media screen and (min-width: 780px){
+  li {
+    display: inline-block;
+    background: gray;
+    color: white;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+/* @media screen and (min-width: 600px) and (max-width: 900px){
+  body{
+  background-color: lightcyan;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  body{
+  background-color: salmon;
+  }
+} */

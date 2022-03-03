@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.border-test{
+  border: 1px solid red;
+}
+
+.box-1{
+  margin: 20px 0;
+}
+
+.box-2{
+  margin: 20px 0;
+}
+
+div.starred{
+  background-color:aqua;
+}
+
+div .starred{
+  color:red;
+}
