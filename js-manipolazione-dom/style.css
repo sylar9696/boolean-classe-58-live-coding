@@ -1,0 +1,25 @@
+.pink{
+  background-color: pink;
+}
+
+.bigger{
+  font-size: 3em;
+}
+
+.nota {
+  padding: 15px;
+  background-color: antiquewhite;
+  border-radius: 15px;
+}
+
+.d-none{
+  display: none;
+}
+
+.maschio{
+  color: aqua;
+}
+
+.femmina{
+  color: pink;
+}
