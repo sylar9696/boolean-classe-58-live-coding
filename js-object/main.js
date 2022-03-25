@@ -71,8 +71,10 @@ let classi = [
 
   //stampare tutti i valori di un array bidimensionale
 
+  let k = 0;
+
   for (let i= 0; i < classi.length; i++){
-    // console.log( classi[i]['nomeClasse'] );
+    console.log( `sono dentro il for: ${classi[i]}` );
     for( let key in classi[i] ){
       console.log( `${key} => ${classi[i][key]}` );
     }
