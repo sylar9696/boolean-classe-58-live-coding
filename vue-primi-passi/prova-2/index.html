@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Istanza Vue -->
+  <div id="root">
+    <!-- V-bind => aggiungere attributi al tag -->
+    <h1 v-bind:class="myClass" class="ciao">Titolo</h1>
+
+    <!-- v-model => ci permette di dinamicizzare il value di un input -->
+    <input type="text" v-model="variabileVmodel" >
+    <!-- Come recuperare e stampare il valore di un data -->
+    {{ variabileVmodel }}
+    <!-- Come utilizzare le funzione: all'evento -->
+    <button @click="nomeFunzione">click me</button>
+    <!-- Come usare una funzione senza evento al caricamento della pagina-->
+    {{ myFunction2() }}
+    <!-- v-if per mostrare e nascordere tag html -->
+    <p v-if="nomeVariabileData">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque commodi modi officiis, beatae neque voluptatibus ea vero deserunt tempore soluta perferendis quibusdam ipsa quos voluptatem dolor? Dolor, numquam quaerat.</p>
+    <button @click="showHide">mostra/nascondi</button>
+    <!-- v-for cicla un array di dati  -->
+    <ul>
+      <li v-for="elem in todos">
+        {{ elem.text }}
+      </li>
+    </ul>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

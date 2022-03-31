@@ -1,0 +1,29 @@
+.font-big{
+  font-size: 3em;
+}
+
+.color-red{
+  color: red;
+}
+
+.color-blue{
+  color: blue;
+}
+
+.es-2{
+  margin-top: 200px;
+}
+
+.aqua{
+  color: aqua;
+}
+
+.rossoFragola{
+  color: rebeccapurple;
+}
+
+@media screen and ( max-width: 600px ) {
+  body{
+    background-color: red;
+  }
+}
