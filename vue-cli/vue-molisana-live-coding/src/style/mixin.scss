@@ -1,0 +1,8 @@
+@import './variabili.scss';
+
+@mixin listaVerticale( $listPosition, $directionList ){
+    list-style-type: none;
+    display: flex;
+    text-align: #{$listPosition};
+    flex-direction: #{$directionList};
+}
