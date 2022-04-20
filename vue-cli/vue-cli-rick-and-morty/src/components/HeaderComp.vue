@@ -1,13 +1,13 @@
 <template>
-  <header>
-    ciao
+  <header class="container text-center py-4 fw-bolder">
+    <h1>{{ msg }}</h1>
   </header>
 </template>
 
 <script>
 export default {
   name: 'HeaderComp',
-
+  props: ['msg']
 }
 </script>
 
