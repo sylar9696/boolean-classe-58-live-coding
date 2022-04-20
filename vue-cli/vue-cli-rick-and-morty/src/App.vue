@@ -1,22 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HeaderComp/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import "bootstrap"
+
+//componenti
+import HeaderComp from './components/HeaderComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComp
   }
 }
 </script>
 
 <style lang="scss">
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
