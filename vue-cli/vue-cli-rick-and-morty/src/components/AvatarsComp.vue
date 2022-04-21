@@ -8,7 +8,7 @@
 
     <!--inserire contenuto componente-->
     <CardAvatar
-      v-for="( element, index ) in avatarsArray"
+      v-for="( element, index ) in filtraggio()"
       :key="index"
       :image="element.image"
       :name="element.name"
@@ -16,7 +16,7 @@
       :origin="element.origin"
     />
     <!-- componente lunghezza elementi api -->
-    <LunghezzaApi :lunghezza="avatarsArray.length"/>
+    <LunghezzaApi :lunghezza="filtraggio().length"/>
 
   </div>
 
@@ -73,8 +73,18 @@ export default {
   methods: {
     metodoSearch( testo ){
       console.log(testo)
-      // this.testoRicerca = testo
-      // console.log(this.testoRicerca)
+      this.testoRicerca = testo
+      console.log(this.testoRicerca)
+    },
+
+    filtraggio(){
+      if( this.testoRicerca === '' ){
+        return this.avatarsArray
+      } else{
+        return this.avatarsArray.filter( (elem) => {
+          return elem.name.toLowerCase().includes(this.testoRicerca.toLowerCase())
+        } )
+      }
     }
   }
 }
