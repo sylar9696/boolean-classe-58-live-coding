@@ -1,5 +1,11 @@
 <template>
-  <div class="row">
+
+<div>
+  <div class="row" v-if="!loadingStatus">
+
+    <!-- Spazio ricerca -->
+    <SearchComp @funzioneRicerca="metodoSearch"/>
+
     <!--inserire contenuto componente-->
     <CardAvatar
       v-for="( element, index ) in avatarsArray"
@@ -9,8 +15,19 @@
       :species="element.species"
       :origin="element.origin"
     />
+    <!-- componente lunghezza elementi api -->
+    <LunghezzaApi :lunghezza="avatarsArray.length"/>
 
   </div>
+
+  <!-- Loader -->
+  <div v-else>
+    <LoaderComp/>
+  </div>
+
+</div>
+
+
 </template>
 
 <script>
@@ -18,16 +35,26 @@
 import axios from 'axios';
 
 import CardAvatar from './partials/CardAvatar.vue'
+import LoaderComp from './partials/LoaderComp.vue'
+import LunghezzaApi from './partials/LunghezzaApi.vue'
+import SearchComp from './partials/SearchComp.vue'
+
 
 export default {
   //Cambiare il nome con quello del componente creato
   name: 'AvatarsComp',
   components: {
-    CardAvatar
+    CardAvatar,
+    LoaderComp,
+    LunghezzaApi,
+    SearchComp
   },
   data(){
     return{
-      avatarsArray: []
+      avatarsArray: [],
+      loadingStatus: true,
+      testoRicerca: ''
+      // numeroAvatars: null
     }
   },
   created(){
@@ -36,10 +63,19 @@ export default {
          .then( ( res )=>{
            console.log( res.data );
            this.avatarsArray = res.data
+           this.loadingStatus = false
+          //  this.numeroAvatars = this.avatarsArray.length
          } )
          .catch( (error) => {
            console.log( error )
          } )
+  },
+  methods: {
+    metodoSearch( testo ){
+      console.log(testo)
+      // this.testoRicerca = testo
+      // console.log(this.testoRicerca)
+    }
   }
 }
 </script>
